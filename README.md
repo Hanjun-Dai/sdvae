@@ -1,7 +1,7 @@
 # sdvae
-Syntax-Directed Variational Autoencoder that generates programs and molecues
+Syntax-Directed Variational Autoencoder for Structured Data (https://arxiv.org/abs/1802.08786)
 
-# Download the data and pretrained model
+# 1. Download the data and pretrained model
 
 Use the following dropbox link:
 
