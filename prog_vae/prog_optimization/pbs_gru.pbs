@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -N gru
+#PBS -q monkeys
+#PBS -l walltime=24:00:00
+#PBS -l nodes=1:ppn=2
+#PBS -l mem=4gb
+#PBS -k oe
+#PBS -m ae
+
+cd $PBS_O_WORKDIR
+echo "
+==================================================
+Node: `hostname`
+Working directory: ${PWD}
+==================================================
+"
+
+cd /nv/hcoc1/hdai8/data/Research/graph_generation/program/prog_optimization
+
+./monkeys_cpu_bo.sh $kl $prog $seed $ynorm
+
